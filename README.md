@@ -7,12 +7,14 @@ Lanzar desde la rama por defecto sobre otras ramas... ¿qué ocurre?
 
 ## Estructura del repositorio
 
+```
 ├── .github
 │   └── workflows
 │       └── YAML1.yml
 │       └── YAML2.yml
 ├── Lectura.txt
 └── README.md
+```
 
 Donde:
 Lectura.txt
