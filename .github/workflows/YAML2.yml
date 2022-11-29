@@ -16,9 +16,9 @@ on:
       - 'branch1'
       - 'branch2'
 jobs:
-  jobDev:
-    name: jobDev
-    if: ${{ github.ref_name }} = "dev"
+  jobBranch2:
+    name: jobBranch2
+    if: ${{ github.ref_name }} = "branch2"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
