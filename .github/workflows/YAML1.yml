@@ -18,7 +18,7 @@ on:
 jobs:
   jobMaster:
     name: jobMaster
-    if: ${{ github.ref_name }} = "master"
+    if: ${{ github.ref_name }} == "master"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -28,7 +28,7 @@ jobs:
 
   jobDev:
     name: jobDev
-    if: ${{ github.ref_name }} = "dev"
+    if: ${{ github.ref_name }} == "dev"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -37,7 +37,7 @@ jobs:
             echo "${{ github.ref_name }}"
 
   jobBranch1:
-    if: ${{ github.ref_name }} = "branch1"
+    if: ${{ github.ref_name }} == "branch1"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -46,7 +46,7 @@ jobs:
             echo "${{ github.ref_name }}"
 
   jobBranch2:
-    if: ${{ github.ref_name }} = "branch2"
+    if: ${{ github.ref_name }} == "branch2"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
