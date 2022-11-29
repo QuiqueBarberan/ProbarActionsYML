@@ -16,6 +16,15 @@ Lanzar desde la rama por defecto sobre otras ramas... ¿qué ocurre?
 └── README.md
 ```
 
+## Contenido de cada rama
+Branchs	YAML1	YAML2	Lectura.txt	Default branch
+master	ü	û	I am branch master	ü
+dev	ü	ü	I am branch dev	û
+branch1	ü	ü	I am branch branch1	û
+branch2	ü	ü	I am branch branch2	û
+![image](https://user-images.githubusercontent.com/113335738/204573449-af81e624-db9f-4dae-94aa-383cc5787e43.png)
+
+
 Donde:
 Lectura.txt
  - Su contenido ha sido modificido en cada rama para que al leerlo se obtenga resultado distinto.
