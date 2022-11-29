@@ -1,0 +1,27 @@
+name: YML 2 (DOS)
+run-name: On ${{ github.event_name }} in ${{ github.ref }}
+
+on: 
+  workflow_dispatch:
+  push:
+    branches:
+      - 'master'
+      - 'dev'
+      - 'branch1'
+      - 'branch2'
+  pull_request:
+    branches:
+      - 'master'
+      - 'dev'
+      - 'branch1'
+      - 'branch2'
+jobs:
+  jobDev:
+    name: jobDev
+    if: ${{ github.ref_name }} = "dev"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+            cat Lectura.txt
+            echo "${{ github.ref_name }}"
