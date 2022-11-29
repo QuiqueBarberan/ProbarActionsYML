@@ -26,6 +26,7 @@ YAML1.yml
 
 YAML2.yml
  - Contiene un job donde unicamente se ejecutará en la propia rama.
+ - No existe en la rama por defecto.
 
 
 ## Objetivo del repositorio
